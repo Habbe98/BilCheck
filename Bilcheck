@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BilCheck</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <img src="logo-placeholder.png" alt="BilCheck Logo" class="logo">
+      <h1>BilCheck</h1>
+      <button class="primary-button">KOM IGÅNG</button>
+    </header>
+    <section class="features">
+      <div class="feature-item">
+        <img src="checklist-icon.png" alt="Checklista">
+        <p>Checklista</p>
+      </div>
+      <div class="feature-item">
+        <img src="problems-icon.png" alt="Vanliga problem">
+        <p>Vanliga problem</p>
+      </div>
+      <div class="feature-item">
+        <img src="costs-icon.png" alt="Kostnader">
+        <p>Kostnader</p>
+      </div>
+      <div class="feature-item">
+        <img src="service-icon.png" alt="Serviceintervaller">
+        <p>Serviceintervaller</p>
+      </div>
+    </section>
+    <section class="search">
+      <input type="text" placeholder="Sök bilmodell eller regnummer">
+      <button class="search-button">🔍</button>
+    </section>
+    <footer class="footer">
+      <button class="language-button">🌍 Svenska</button>
+    </footer>
+  </div>
+</body>
+</html>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.hero {
+  background-image: url('car-background.jpg');
+  background-size: cover;
+  color: white;
+  padding: 50px 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.primary-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.search {
+  margin: 20px 0;
+}
+
+.search input {
+  padding: 10px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-button {
+  padding: 10px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.language-button {
+  background: none;
+  border: none;
+  color: #007BFF;
+  font-size: 16px;
+  cursor: pointer;
+}
